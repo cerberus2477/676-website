@@ -3,8 +3,13 @@
     --clr-white: hsl(120, 7%, 97%);
     --clr-black: hsl(0, 0%, 13%);
 
-    --clr-rose: hsl(310, 100%, 88%);
-    --clr-gold: hsl(47, 86%, 46%);
+    --clr-rose: hsl(7, 100%, 87%);
+    --clr-creme: hsl(24, 100%, 95%);
+    --clr-peach: hsl(3, 98%, 75%);
+
+    --clr-burgundy: hsl(344, 74%, 29%);
+    --clr-teal: hsl(191, 100%, 13%);
+
 
 
     /*-webkit-font-smoothing: antialiased;
@@ -84,7 +89,6 @@
 /* CSS RESET */
 * {
     box-sizing: border-box;
-    z-index: 1;
 }
 
 html,
@@ -105,19 +109,21 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-color: transparent;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
     background-image: url("../img/fabric.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 
 /* színátmenet a háttéren */
@@ -128,7 +134,7 @@ header::after {
     height: 100%;
     width: 100%;
 
-    background: linear-gradient(to bottom, var(--clr-white), var(--cps--secondary));
+    background: linear-gradient(to bottom, var(--clr-white), var(--clr-creme));
     opacity: .6;
 }
 
@@ -173,7 +179,30 @@ a {
     transition: all .2s linear;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
 
+.header-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* added display flex properties */
+.header-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content:center; */
+}
 
 ::selection {
     background-color: var(--clr-rose);
@@ -185,18 +214,37 @@ p {
     text-align: justify;
 }
 
-
-
-
-main {
-    padding: 5rem 2rem;
+.logo {
+    font-size: 3rem;
+    justify-self: center;
+    align-self: center;
+    color: var(--clr-peach);
 }
 
+h1 {
+    /* font: bold max(10rem, 8vw) / max(10rem, 5vw); */
+    font-size: 5rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: var(--clr-peach);
+
+}
+
+/* main {
+    padding: 5rem 2rem;
+} */
 
 
+.header-content {
+    max-width: 40%;
+    z-index: 99;
+    position: relative;
+    margin: 0 10rem;
+    padding: 1px;
+}
 
-
-.rolunk {
+/* 
+.two-column {
 
     margin-inline: -2rem;
     border: 0;
@@ -206,22 +254,51 @@ main {
     width: 100%;
     margin-bottom: 35px;
     padding: 35px 10%;
+} */
+
+section,
+footer {
+    padding: 35px 10%;
+    /* width: 100%; */
 }
 
-.rolunk {
+/* grid */
+.two-column {
     max-width: 1440px;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    background-color: var(--cps--secondary);
+    margin-inline: auto;
+}
+
+
+
+#problema {
+    background-color: var(--clr-creme);
+}
+
+#rolunk {
+    background-color: var(--clr-teal);
+    color: var(--clr-white);
 }
 
 footer {
-    background-color: #ceb198;
+    background-color: var(--clr-burgundy);
+    color: var(--clr-white);
 }
 
-.duma {
-    background-color: gold;
+footer>div {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+footer>div>div {
+    max-width: 40%;
+}
+
+.tunde {
+    text-align: center;
 }
