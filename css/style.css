@@ -8,6 +8,7 @@
     --clr-peach: hsl(3, 98%, 75%);
 
     --clr-burgundy: hsl(344, 74%, 29%);
+    --clr-burgundy-dark: hsl(344, 82%, 22%);
     --clr-teal: hsl(191, 100%, 13%);
 
 
@@ -140,7 +141,7 @@ header::after {
 
 
 .btn {
-    margin: 1rem;
+    margin-top: 1rem !important;
 
     border-radius: 1px;
     border: none;
@@ -160,6 +161,12 @@ header::after {
     color: var(--clr-black);
 }
 
+.btn-dark{
+    /* margin-top: 1rem; */
+    /* background-color: var(--clr-teal); */
+    border: 1px solid var(--clr-teal);
+    /* color: var(--clr-white); */
+}
 nav a {
     margin: 0;
     padding: 2.4vh 1em;
@@ -168,6 +175,8 @@ nav a {
     font-weight: light;
     color: var(--clr-black);
 }
+
+
 
 /* nav a.active {
     text-decoration: underline wavy;
@@ -258,13 +267,22 @@ h1 {
 
 section,
 footer {
-    padding: 35px 10%;
+    padding: 65px 10%;
     /* width: 100%; */
 }
 
 /* grid */
 .two-column {
     max-width: 1440px;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+.two-column2 {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr;
@@ -284,6 +302,14 @@ footer {
     color: var(--clr-white);
 }
 
+#megoldas{
+    background-color: var(--clr-creme);
+}
+
+#szolgaltatasok {
+    background-color: var(--clr-rose);
+}
+
 footer {
     background-color: var(--clr-burgundy);
     color: var(--clr-white);
@@ -301,4 +327,25 @@ footer>div>div {
 
 .tunde {
     text-align: center;
+    /* background-color: var(--clr-burgundy-dark); */
+}
+
+.tanacs{
+    background-color: aquamarine;
+    padding: 1rem;
+    font-style: italic;
+    color: var(--clr-black);
+}
+
+.kerdojel{
+    background-color: hotpink;
+    color: black;
+    padding: 1rem;
+}
+
+.p676{
+    /* font-style: italic; */
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--clr-rose);
 }
