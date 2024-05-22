@@ -31,8 +31,14 @@
     /* WP */
     --wp--preset--font-size--huge: 42px;
     --woocommerce: #a46497;
-    --wc-primary: #a46497;
+    --wc-primary: ##4D3A4D;
 
+    /* highlight palette */
+    --clr-magenta: #99005D;
+    --clr-magenta-light: #E661A7;
+    --clr-light: #FBF4D7;
+    --clr-gray-purple: #FBF4D7;
+    --clr-teal2: #005B4F;
 
 
 
