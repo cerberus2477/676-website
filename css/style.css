@@ -257,7 +257,13 @@ h1 {
 header * {
     z-index: 99;
 }
-
+.header-subpage{
+    height: fit-content;
+    min-height: 20vw;
+}
+.title-subpage{
+    text-align: center;
+}
 /* 
 .two-column {
 
