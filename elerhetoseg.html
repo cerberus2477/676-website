@@ -1,5 +1,169 @@
-Niki:
-Kata:
-6hetalatt6@gmail.com
+<!DOCTYPE html>
+<html lang="hu">
 
-plusz egy kérdőív amivel innen emailt tudnak küldeni (név, tárgy, üzenet)
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>676 | Főoldal</title>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://kit.fontawesome.com/af2e246792.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Style -->
+    <!-- <link rel="stylesheet" href="css/style-form2.css"> -->
+    <!-- <link rel="stylesheet" href="css/style-form.css"> -->
+</head>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content-left">
+            <a href="program.html">Program</a>
+            <a href="Jelentkezes.html">Jelentkezés</a>
+            <a href="partnereink.html" class="active">Partnereink</a>
+            <!-- <a href="#velemenyek">Vélemények</a> -->
+        </div>
+        <a href="index.html"><img class="logo" src="./img/logo.jpg" alt="676"></a>
+        <div class="nav-content-right">
+            <!-- <a href="arak.html">Áraink</a> -->
+            <!-- <a href="before-after.html">Before-After</a> -->
+            <a href="fotok.html">Fotók</a>
+            <a href="elerhetoseg.html">Elérhetőség</a>
+        </div>
+    </nav>
+
+    <header class="header-subpage">
+        <h1 class="title-subpage"> Elérhetőség </h1>
+    </header>
+
+    <main>
+
+
+        <!-- 
+        <section>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Név</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Tárgy</label>
+                        <input type="subject" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Üzenet</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Elküldöm!</button>
+                </form>
+            </div>
+        </section> -->
+
+
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+
+        <section id="contact-form">
+            <div class="contact-wrap">
+                <div class="form">
+                    <h3>Vedd fel velünk a kapcsolatot</h3>
+                    <form method="post" id="contactForm" name="contactForm">
+                        <div class="form-group">
+                            <label for="name">Név *</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Az Ön neve">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="text" class="form-control" name="email" id="email"
+                                placeholder="Az Ön email címe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Tárgy</label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefonszám">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                                placeholder="Írja meg üzenetét"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Üzenet Küldése" class="btn">
+                            <span class="submitting"></span>
+                        </div>
+                    </form>
+
+                    <div id="form-message-warning"></div>
+                    <div id="form-message-success">Az üzenetét elküldtük, köszönjük!</div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Szöveg szöveg!</h3>
+                    <p class="mb-5">Szöveg szöveg szöveg szöveg szöveg.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Niki:</li>
+                        <li><i class="fas fa-phone"></i> Kata:</li>
+                        <li><i class="fas fa-envelope"></i> 6hetalatt6@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <div>
+                    <h3>Navigáció</h3>
+                    <ul>
+                        <li><a class="navlink" href="index.php#rolunk">Ugyanaz, mint az oldal tetején</a></li>
+                        <li><a class="navlink" href="index.php#csomagok" data-active="true">...</a></li>
+                        <li><a class="navlink" href="index.php#bovebben" data-active="true">...</a></li>
+                        <li><a href="index.php#kapcsolat">...</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Forduljon hozzánk bizalommal!</h3>
+                    <ul>
+                        <li>Tel: +369696969 <i class="fa fa-mobile"></i></li>
+                        <li>Facebook oldal<i class="fa fa-facebook"></i></li>
+                        <li>Facebook csoport<i class="fa fa-messenger"></i></li>
+                        <li>Ugyanazok igazából mint a kapcsolat fülön</li>
+                        <p>Ha van olyan ötleted, ami még megvalósításra vár és nem tudod, hogyan indulj el vele, keress
+                            meg
+                            minket a
+                            <a href="mailto:6hetalatt6@gmail.com">6hetalatt6@gmail.com</a> email címen.
+                        </p>
+
+                    </ul>
+                </div>
+                <div>
+                    <h3>Telephelyünk <i class="fa-solid fa-map-location-dot"></i></h3>
+                    <p class="tanacs">Nem biztos, hogy van olyan <br> helyszínetek amit érdemes idetenni, <br> de egy
+                        leghetőség</p>
+                    <div class="maps-container">
+                        <iframe width="100%" height="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.7356574234536!2d19.23691240392388!3d47.28042171934365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741930014fc0d9b%3A0x195b02a0b1e91634!2sMacskalapos!5e0!3m2!1sen!2sus!4v1709628639614!5m2!1sen!2sus"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="tunde">A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/"
+                    target="_blank" rel="noopener noreferrer">Tábor Tünde</a></p>
+        </footer>
+</body>
+
+</html>
