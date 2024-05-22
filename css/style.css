@@ -1,37 +1,27 @@
 /* VARIABLES */
 :root {
-    --clr-white: hsl(300, 5%, 92%);
-    ;
-    --clr-black: hsl(0, 0%, 13%);
 
-    --clr-rose: var(--clr-pink);
-    --clr-creme: hsl(24, 100%, 95%);
+    --clr-pink-light: #eab2cb;
+    --clr-pink-dark: #c97a97;
+    --clr-grey-mid: #868787;
+    --clr-grey-dark: #505050;
+    --clr-white: #ffffff;
+    --clr-black: #000000;
 
-    --clr-burgundy: hsl(344, 74%, 29%);
-    /* --clr-burgundy-dark: hsl(344, 82%, 22%); */
-    --clr-teal: hsl(191, 100%, 13%);
-
-    /* nikitől */
-    --clr-perfect-gray: #868787;
-    --clr-pink-shit: #eab2cb;
+    /* szurke lehet subtext */
 
     /* adobe */
-    --clr-a1: #EBD9B2;
     --clr-a2: #B2C5EB;
     --clr-purple-dark: #6B3A50;
 
     /* ránézésre */
+    --clr-burgundy: hsl(344, 74%, 29%);
+    --clr-teal: hsl(191, 100%, 13%);
     --clr-purple-dark: #270F33;
-    --clr-pink: #FFC2E8;
-    --clr-pink: var(--clr-pink-shit);
-    --clr-valami: #966A7D;
-    --wc-subtext: #767676;
-    --wc-secondary-text: #515151;
 
     /* WP */
-    --wp--preset--font-size--huge: 42px;
     --woocommerce: #a46497;
-    --wc-primary: ##4D3A4D;
+    --wc-primary: #4D3A4D;
 
     /* highlight palette */
     --clr-magenta: #99005D;
@@ -39,14 +29,7 @@
     --clr-light: #FBF4D7;
     --clr-gray-purple: #FBF4D7;
     --clr-teal2: #005B4F;
-    /* 
-    gpt colors */
-    --clr-pink-light: #eab2cb;
-    --clr-pink-dark: #c97a97;
-    --clr-grey-mid: #868787;
-    --clr-grey-dark: #505050;
-    --clr-white: #ffffff;
-    --clr-black: #000000;
+
 
 
 
@@ -68,13 +51,6 @@
     --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
     --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
     --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-    --cps--link: #4e4a3f;
-
-    --cps--primary: #dfcaba;
-    --cps--secondary: #f7f2ee;
-    --cps--secondary--button: #ceb198;
-    --cps--accent: #fbf8f6;
-
 }
 
 
@@ -104,17 +80,11 @@ header {
     height: 80vh;
     background-color: transparent;
 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
     background-image: url("../img/fabr.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* -webkit-filter: grayscale(70%);
-    filter: grayscale(100%); */
+
 }
 
 
@@ -129,6 +99,8 @@ header::after {
     width: 100%;
 
     /* background: linear-gradient(to bottom, var(--clr-white), var(--clr-white)); */
+    /* -webkit-filter: grayscale(70%);
+    filter: grayscale(100%); */
     opacity: .7;
     mix-blend-mode: color;
 }
@@ -151,16 +123,10 @@ header::after {
 
     transition: all .2s;
 
-    background-color: var(--clr-rose);
+    background-color: var(--clr-pink-dark);
     color: var(--clr-black);
 }
 
-.btn-dark {
-    /* margin-top: 1rem; */
-    /* background-color: var(--clr-teal); */
-    border: 1px solid var(--clr-teal);
-    /* color: var(--clr-white); */
-}
 
 nav a {
     margin: 0;
@@ -168,17 +134,17 @@ nav a {
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: light;
-    color: var(--clr-black);
+    color: var(--clr-grey-dark);
 }
 
 
 
-/* nav a.active {
-    text-decoration: underline wavy;
-} */
+nav a.active {
+    color: var(--clr-pink);
+}
 
 a {
-    color: var(--clr-rose);
+    color: var(--clr-pink-dark);
     text-decoration: none;
     transition: all .2s linear;
 }
@@ -188,14 +154,13 @@ nav {
     justify-content: center;
 }
 
-.header-right {
+.nav-content-right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-/* added display flex properties */
-.header-left {
+.nav-content-left {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -205,11 +170,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* align-content:center; */
 }
 
 ::selection {
-    background-color: var(--clr-rose);
+    background-color: var(--clr-pink-light);
 }
 
 p {
@@ -236,14 +200,10 @@ h1 {
     font-size: 5rem;
     line-height: 0.9;
     text-transform: uppercase;
-    color: var(--clr-pink);
+    color: var(--clr-pink-light);
     white-space: nowrap;
 
 }
-
-/* main {
-    padding: 5rem 2rem;
-} */
 
 
 .header-content {
@@ -257,13 +217,21 @@ h1 {
 header * {
     z-index: 99;
 }
-.header-subpage{
+
+.header-subpage {
+    padding: 1px;
     height: fit-content;
     min-height: 20vw;
+
+    display: flex;
+    align-items: center;
 }
-.title-subpage{
+
+.title-subpage {
     text-align: center;
+    flex-grow: 1;
 }
+
 /* 
 .two-column {
 
@@ -312,9 +280,11 @@ footer {
 .card {
     /* background-color: #6B3A50; */
     border-radius: 5px;
-    border: 1px dashed var(--clr-burgundy);
+    border: 1px dashed var(--clr-grey-dark);
     padding: 1rem;
 }
+
+
 
 #magadra-ismersz>h2 {
     text-align: center;
@@ -322,24 +292,24 @@ footer {
 
 
 #problema {
-    background-color: var(--clr-creme);
+    background-color: var(--clr-pink-light);
 }
 
 #rolunk {
-    background-color: var(--clr-teal);
+    background-color: var(--clr-grey-dark);
     color: var(--clr-white);
 }
 
 #megoldas {
-    background-color: var(--clr-creme);
+    background-color: var(--clr-pink-light);
 }
 
 #szolgaltatasok {
-    background-color: var(--clr-rose);
+    background-color: var(--clr-pink-light);
 }
 
 footer {
-    background-color: var(--clr-burgundy);
+    background-color: var(--clr-pink-dark);
     color: var(--clr-white);
 }
 
@@ -375,7 +345,7 @@ footer>div>div {
     /* font-style: italic; */
     font-weight: bold;
     font-size: 1.2em;
-    color: var(--clr-rose);
+    color: var(--clr-pink-light);
 }
 
 .alatt {
