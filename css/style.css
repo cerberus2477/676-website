@@ -218,7 +218,7 @@ p {
 
 h1 {
     /* font: bold max(10rem, 8vw) / max(10rem, 5vw); */
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 0.9;
     text-transform: uppercase;
     color: var(--clr-pink-light);
@@ -233,6 +233,10 @@ h1 {
     position: relative;
     margin: 0 10rem;
     padding: 1px;
+}
+
+.header-img {
+    height: 70%;
 }
 
 header * {
@@ -372,18 +376,40 @@ footer>div>div {
     padding: 1rem;
 }
 
-.p676 {
-    /* font-style: italic; */
+/* .p676 {
+    font-style: italic;
     font-weight: bold;
     font-size: 1.2em;
     color: var(--clr-pink-light);
 }
 
-.alatt {
-    text-transform: lowercase;
+.p676:before {
+    font-family: "Font Awesome 5 Free"; 
+    content: url('../img/logo.jpg');
+    height: 16px;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+} */
+
+
+.p676 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--clr-pink-light);
+    display: inline-flex;
+    align-items: center;
 }
 
-section img {
+.p676 img {
+    height: 1em;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+
+section>img {
     border: 15px solid white;
     box-shadow: var(--wp--preset--shadow--natural);
 }
