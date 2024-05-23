@@ -346,7 +346,12 @@ footer {
 
 footer {
     background-color: var(--clr-pink-dark);
+    color: var(--clr-white) !important;
+}
+
+footer a {
     color: var(--clr-white);
+    text-decoration: underline;
 }
 
 footer>div {
