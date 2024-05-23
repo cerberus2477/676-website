@@ -208,7 +208,7 @@ nav {
 p {
     word-break: break-word;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
 }
 
 /* 
@@ -424,6 +424,9 @@ footer>div>div {
     vertical-align: middle;
 }
 
+.szerep {
+    font-style: italic;
+}
 
 section>img {
     border: 15px solid white;
