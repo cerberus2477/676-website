@@ -88,6 +88,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -141,6 +144,11 @@ h3 {
 .btn-dark {
     background-color: var(--clr-pink-dark);
     color: var(--clr-white);
+}
+
+.btn-container {
+    margin-top: 3rem;
+    text-align: center;
 }
 
 nav a {
@@ -235,9 +243,12 @@ h1 {
     padding: 1px;
 }
 
-.header-img {
-    height: 70%;
+.header-img img {
+    /* height: 70%; */
+    width: 70%;
 }
+
+header>div {}
 
 header * {
     z-index: 99;
