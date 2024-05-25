@@ -8,38 +8,32 @@
 
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-nav.css">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <script defer src="https://kit.fontawesome.com/af2e246792.js" crossorigin="anonymous"></script>
+    <script defer src="./js/nav.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img class="logo" src="./img/logo-676.jpg" alt="676"></a>
-        <ul class="nav-content-left list-unstyled">
-            <li> <a href="program.html">Program</a></li>
-            <li><a href="partnereink.html">Partnereink</a></li>
-            <li><a href="fotok.html">Fotók</a></li>
-            <li><a href="elerhetoseg.html">Elérhetőség</a></li>
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a class="btn" href="jelentkezes.html">Jelentkezés</a></li>
             <!-- <a href="#velemenyek">Vélemények</a> -->
             <!-- <a href="arak.html">Áraink</a> -->
             <!-- <a href="before-after.html">Before-After</a> -->
-        </ul>
-    </nav>
-    <!-- <nav class="main-nav" data-state="closed" data-scrolled="false">
+    <nav class="main-nav" data-state="closed" data-scrolled="false">
         <div class="nav-first-row">
-            <a class="logo" href="#">Rudolf vendégház</a>
-            <a href="#" class="btn btn-yellow navbar-toggler" onclick="toggleNav();">
+            <a href="index.html"><img class="logo" src="./img/logo-676.jpg" alt="676 logó" title="Főoldal"></a>
+            <a href="#" class="btn btn-dark navbar-toggler" onclick="toggleNav();">
                 <span class="fa fa-bars"></span>
             </a>
         </div>
 
-        <a href="programok.html">Programok</a>
-        <a href="galeria.html">Galéria</a>
-        <a href="">Kapcsolat</a>
-        <a class="btn btn-yellow" href="">Foglalás</a>
-    </nav> -->
+        <div class="nav-content">
+            <a href="program.html">Program</a>
+            <a href="rolunk.html">Rólunk/Partnereink</a>
+            <a href="galleria.html">Galléria</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+            <a class="btn" href="jelentkezes.html">Jelentkezés</a>
+        </div>
+    </nav>
 
 
 
@@ -65,7 +59,7 @@
                 <img src="https://source.unsplash.com/random/" width="500px">
 
                 <div>
-                    <h3>(Kutatás)</h3>
+                    <h3>Kutatást végeztünk</h3>
                     <p>Végeztünk egy piackutatást, találomra 100 hölgyet megvizsgáltunk, ami kimutatta, hogy a nőknek
                         legalább 85%-a hasonló gondokkal küzd, akármilyen jól is néznek ki és akárhány másik nő irigyli
                         őket, és a
@@ -110,48 +104,14 @@
                             kritizálják és
                             akár utálják is magukat.</li>
                     </ul>
+                    <p>Hölgyek, nem ez a jó irány.</p>
                 </div>
             </div>
 
         </section>
 
 
-        <section id="rolunk" class="bg-grey">
-            <div class="wrapper columns text-and-img">
-                <img src="img/rolunk.jpg" width="500px" alt="Kata és Niki">
-                <div>
-                    <h2> Rólunk </h2>
-                    <p>Kata és Niki, jóbarátnők, az önfejlesztés megszállottjai vagyunk.</p>
-                    <!-- <p>(Nagyon messziről indultunk, az élettől külön-külön is hatalmas feladatokat kaptunk, amiben
-                        sorstársakként
-                        egymásra találtunk és azóta is vállat vállhoz vetve megyünk előre és tesszük a dolgunkat.)</p> -->
-                    <p>Folyamatosan és szenvedélyesen ötletelünk, egyre jobb és nívósabb dolgokat találunk ki és
-                        valósítunk meg.</p>
-                    <!-- <p>(Minden ötletünket kipróbáljuk önmagunkon is, így tudjuk őket hitelesen képviselni.)</p> -->
-                    <p>A <span class="p676"><img src="img/logo.jpg" alt="Logo"> Hat hét alatt hat</span> Projektünk
-                        akkor született meg, amikor az
-                        önfejlesztésünk azon szakaszához értünk, amihez nagy szükség lett volna önbecsülésre,
-                        önbizalomra, belső erőre, és nem volt…</p>
-                    <!-- <p class="tanacs">ide lehetne hogy az előző problémákra ez a megoldás nekik, a vendégeknek</p> -->
-
-                    <p>Komoly kutató munka elvégzése után összeállítottunk magunk számára egy programot, amivel ezt
-                        hatékonyan el
-                        lehet érni.</p>
-
-                    <hr>
-                    <p>A programot küldetésünknek érezzük, szeretettel csináljuk. Szándékosan csak minimális bevételt
-                        termel
-                        számunkra, amelynek egy részét jótékony célra fordítjuk, egyedülálló édesanyák számára
-                        biztosítunk belőle
-                        szakember által egyénileg tartott mentálhigiénés programot, amely tartalmaz egyfajta life
-                        coachingot,
-                        életvezetési és munkaszerzési tanácsadást és az ehhez szükséges fodrászt, manikűrt, kényeztető
-                        kézmasszázst.
-                    </p>
-
-                </div>
-            </div>
-        </section>
+        
 
 
 
@@ -163,7 +123,7 @@
             <div class="wrapper columns text-and-img">
                 <div>
                     <h2>(Megoldás)</h2>
-                    <p>Hölgyek, nem ez a jó irány.</p>
+                  
 
                     <p>Mi hisszük, hogy ezen tudunk, tudtok változtatni.
                     <p>Hisszük azt is, hogy ha nyitottak vagytok és eltökéltek, akkor <b> e Program 6 hét alatt hatni
@@ -194,7 +154,8 @@
         </section>
 
         <section id="magadra-ismersz">
-            <h2 class="center">Magadraismersz?</h2>
+            <h2 class="center">Magadra ismersz?</h2>
+            <!-- Mi fog történni? -->
             <div class="wrapper columns">
                 <div class="card">
                     <p>Rendszeresen sokat költesz magadra, de mégsem érzed jól magad a bőrödben?</p>
@@ -210,26 +171,23 @@
             <p class="btn-container"> <a href="program.html" class="btn">Tudj meg többet... (vagy Program)</a></p>
         </section>
 
-        <section id="szolgaltatasok">
-            <h2>Szolgáltatások</h2>
-            <!-- <p class="tanacs">Ide egy-egy pontba a legfontosabb szolgáltatások lennének jók, hogy objektíven lehessen
-                látni, mit is kínáltok.</p> -->
+        <section>
+            <h2>Mire számíthatsz, ha velünk tartasz?</h2>
             <div class="wrapper columns">
                 <div class="card">
-                    <h3>Külső átalakulás</h3>
-                    <p>Lesz külső átalakulás, de nem csak elkészítjük a szép külsőd, hanem meg is tanítunk arra, hogyan
+                    <h3>Szépülés kívül</h3>
+                    <p>Nnem csak elkészítjük a szép külsőd, hanem meg is tanítunk arra, hogyan
                         alakítsd azt ki a mindennapjaidban!</p>
                 </div>
                 <div class="card">
-                    <h3>Belső átalakulás</h3>
-                    <p>Lesz lelki átalakulás, ahol megérzed és megtanulod, hogy hol van benned az az erő és nőiesség,
+                    <h3>Szépülés belül</h3>
+                    <p>Lelki átalakulás, ahol megérzed és megtanulod, hogy hol van benned az az erő és nőiesség,
                         amire szükséged van, és hogyan használd azt, hogy a céljaidnak megfelelő irányba tudj haladni!
                     </p>
                 </div>
                 <div class="card">
-                    <h3>Fotók ?</h3>
-                    <p>És a legfontosabb, hogy ezeket úgy éld át, hogy nem csak közben élvezed, de megtaláld, és haza
-                        vihesd a saját boldogságod! </p>
+                    <h3 class="tanacs">Cím?</h3>
+                    <p>És a legfontosabb, hogy ezeket úgy éld át, hogy valóban megéled és élvezed a változást, és közben megtalálod a saját boldogságod.</p>
                 </div>
             </div>
 
@@ -259,7 +217,8 @@
 
 
     <footer class="bg-dark">
-        <div>
+        <div class="wrapper">
+            <div><p class="tanacs">Itt lesz egy oszlop a logótokkal, mottotokkal, rövid leírással</p></div>
             <div>
                 <h3>Navigáció</h3>
                 <ul class="list-unstyled">
@@ -273,18 +232,24 @@
             <div>
                 <h3>Forduljon hozzánk bizalommal!</h3>
                 <ul>
-                    <li>Ugyanazok igazából mint a kapcsolat fülön</li>
-                    <p>Ha van olyan ötleted, ami még megvalósításra vár és nem tudod, hogyan indulj el vele, keress meg
+                    <li>Kata: </li>
+                    <li>Niki: </li>
+                    <!-- <p>Ha van olyan ötleted, ami még megvalósításra vár és nem tudod, hogyan indulj el vele, keress meg
                         minket a
-                        <a href="mailto:6hetalatt6@gmail.com">6hetalatt6@gmail.com</a> email címen.
+                        <a href="mailto:hathetalatthat@gmail.com.com">hathetalatthat@gmail.com.com</a> email címen.
+                    </p> -->
+                    <p>Ha van olyan ötleted, ami még megvalósításra vár és nem tudod, hogyan indulj el vele, keress meg
+                        minket! 
+                    <a class="btn" href="kapcsolat.html">Üzenet küldése</a>
                     </p>
-
                 </ul>
             </div>
         </div>
-        <p id="tunde" class="center">A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/"
-                target="_blank" rel="noopener noreferrer">Tábor Tünde</a></p>
+        <!-- <p id="tunde" class="center">A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/"
+                target="_blank" rel="noopener noreferrer">Tábor Tünde</a></p> -->
     </footer>
+    <div id="copyright" class="bg-pink"><span>Hat Hét Alatt Hat © 2024 | Minden jog fenntartva</span><span>A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/"
+        target="_blank" rel="noopener noreferrer">Tábor Tünde</a></span></div>
 </body>
 
 </html>
