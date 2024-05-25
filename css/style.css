@@ -234,10 +234,12 @@ p {
 
 h1 {
     /* font: bold max(10rem, 8vw) / max(10rem, 5vw); */
-    font-family: var(--ff-display);
+
+    /* font-family: var(--ff-display); */
     font-size: 3rem;
     line-height: 0.9;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
+    text-transform: uppercase;
     background: linear-gradient(var(--clr-og-pink-light) 40%, var(--clr-pink-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
