@@ -186,6 +186,11 @@ a {
     box-shadow: none;
 }
 
+.flip-x {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 nav {
     display: flex;
     justify-content: center;
