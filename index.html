@@ -8,25 +8,26 @@
 
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <script defer src="https://kit.fontawesome.com/af2e246792.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
-        <div class="nav-content-left">
-            <a href="program.html">Program</a>
-            <a href="jelentkezes.html">Jelentkezés</a>
-            <a href="partnereink.html">Partnereink</a>
+        <ul class="nav-content-left list-unstyled">
+            <li> <a href="program.html">Program</a></li>
+            <li><a href="jelentkezes.html">Jelentkezés</a></li>
+            <li><a href="partnereink.html">Partnereink</a></li>
             <!-- <a href="#velemenyek">Vélemények</a> -->
-        </div>
+        </ul>
         <a href="index.html"><img class="logo" src="./img/logo.jpg" alt="676"></a>
-        <div class="nav-content-right">
+        <ul class="nav-content-right list-unstyled">
             <!-- <a href="arak.html">Áraink</a> -->
             <!-- <a href="before-after.html">Before-After</a> -->
-            <a href="fotok.html">Fotók</a>
-            <a href="elerhetoseg.html">Elérhetőség</a>
-            <a href="index.html">Főoldal</a>
-        </div>
+            <li><a href="fotok.html">Fotók</a></li>
+            <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+            <li><a href="index.html">Főoldal</a></li>
+        </ul>
     </nav>
     <!-- <nav class="main-nav" data-state="closed" data-scrolled="false">
         <div class="nav-first-row">
@@ -45,7 +46,7 @@
 
 
     <header>
-        <div class="two-column2">
+        <div class="wrapper columns text-and-img">
             <div class="header-content">
                 <h1>Hat<br>hét<br>alatt<br>hat</h1>
                 <p>Lelkedtől a szempilládig</p>
@@ -62,7 +63,7 @@
     <main>
         <section id="problema">
 
-            <div class="two-column">
+            <div class="wrapper columns text-and-img">
                 <img src="https://source.unsplash.com/random/" width="500px">
 
                 <div>
@@ -117,8 +118,8 @@
         </section>
 
 
-        <section id="rolunk">
-            <div class="two-column">
+        <section id="rolunk" class="bg-grey">
+            <div class="wrapper columns text-and-img">
                 <img src="img/rolunk.jpg" width="500px" alt="Kata és Niki">
                 <div>
                     <h2> Rólunk </h2>
@@ -149,14 +150,7 @@
                         életvezetési és munkaszerzési tanácsadást és az ehhez szükséges fodrászt, manikűrt, kényeztető
                         kézmasszázst.
                     </p>
-                    <!-- 
-                    
--
-Nikoletta
-Sebestyén Nikoletta
--A 6 hét alatt 6 Projektünk akkor született meg, amikor az önfejlesztésünk azon szakaszához értünk, amihez....
-Itt légyszi így írd: A "Hat hét alatt hat" Projektünk...
-Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
+
                 </div>
             </div>
         </section>
@@ -167,8 +161,8 @@ Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
 
 
 
-        <section id="megoldas">
-            <div class="two-column">
+        <section id="megoldas" class="bg-pink">
+            <div class="wrapper columns text-and-img">
                 <div>
                     <h2>(Megoldás)</h2>
                     <p>Hölgyek, nem ez a jó irány.</p>
@@ -202,8 +196,8 @@ Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
         </section>
 
         <section id="magadra-ismersz">
-            <h2>Magadraismersz?</h2>
-            <div class="three-card">
+            <h2 class="center">Magadraismersz?</h2>
+            <div class="wrapper columns">
                 <div class="card">
                     <p>Rendszeresen sokat költesz magadra, de mégsem érzed jól magad a bőrödben?</p>
                 </div>
@@ -220,23 +214,25 @@ Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
 
         <section id="szolgaltatasok">
             <h2>Szolgáltatások</h2>
-            <p class="tanacs">Ide egy-egy pontba a legfontosabb szolgáltatások lennének jók, hogy objektíven lehessen
-                látni, mit is kínáltok.</p>
-            <div class="two-column">
-                <ul>
-                    <li>Lorem</li>
-                    <li>ipsum dolor</li>
-                    <li>sit amet</li>
-                    <li>szipi szupi fodrász</li>
-                    <li>profi fotók rólad</li>
-                </ul>
-                <ul>
-                    <li>Lorem</li>
-                    <li>ipsum dolor</li>
-                    <li>sit amet</li>
-                    <li>szipi szupi fodrász</li>
-                    <li>profi fotók rólad</li>
-                </ul>
+            <!-- <p class="tanacs">Ide egy-egy pontba a legfontosabb szolgáltatások lennének jók, hogy objektíven lehessen
+                látni, mit is kínáltok.</p> -->
+            <div class="wrapper columns">
+                <div class="card">
+                    <h3>Külső átalakulás</h3>
+                    <p>Lesz külső átalakulás, de nem csak elkészítjük a szép külsőd, hanem meg is tanítunk arra, hogyan
+                        alakítsd azt ki a mindennapjaidban!</p>
+                </div>
+                <div class="card">
+                    <h3>Belső átalakulás</h3>
+                    <p>Lesz lelki átalakulás, ahol megérzed és megtanulod, hogy hol van benned az az erő és nőiesség,
+                        amire szükséged van, és hogyan használd azt, hogy a céljaidnak megfelelő irányba tudj haladni!
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Fotók ?</h3>
+                    <p>És a legfontosabb, hogy ezeket úgy éld át, hogy nem csak közben élvezed, de megtaláld, és haza
+                        vihesd a saját boldogságod! </p>
+                </div>
             </div>
 
         </section>
@@ -247,13 +243,24 @@ Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
             <p>Valahogy így:</p>
             <img src="img/velemenyek-pelda.jpg" alt="Vélemények">
         </section> -->
+
+        <section class="bg-fabric center">
+            <h2>Ne maradj le!</h2>
+            <div>
+                <p> Jelentkezz stb erre az excluzív lehetőségre szöveg szöveg.</p>
+                <p><b>Már csak 5 hely maradt!</b></p>
+                <div class="btn-container"><a href="jelentkezes.html" class="btn">Jelentkezés</a></div>
+
+            </div>
+
+        </section>
     </main>
 
 
 
 
 
-    <footer>
+    <footer class="bg-dark">
         <div>
             <div>
                 <h3>Navigáció</h3>
@@ -277,8 +284,8 @@ Esetleg, ha nem nagy feladat, tegyél a neve elé kicsi logót. -->
                 </ul>
             </div>
         </div>
-        <p class="tunde">A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/" target="_blank"
-                rel="noopener noreferrer">Tábor Tünde</a></p>
+        <p id="tunde" class="center">A weboldalt készítette: <a href="https://www.facebook.com/tunde.tabor.2004/"
+                target="_blank" rel="noopener noreferrer">Tábor Tünde</a></p>
     </footer>
 </body>
 
