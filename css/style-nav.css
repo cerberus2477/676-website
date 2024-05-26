@@ -15,6 +15,8 @@
 
     align-items: center;
 
+    background-color: white;
+
 }
 
 .navbar-toggler {
@@ -79,7 +81,8 @@
 
 
 .main-nav[data-scrolled="true"] {
-    background-color: white;
+    /* background-color: white; */
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
 }
 
 /* nav .logo-text {
