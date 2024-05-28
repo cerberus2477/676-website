@@ -71,30 +71,29 @@ p {
 
 h1 {
     /* font: bold max(10rem, 8vw) / max(10rem, 5vw); */
-
-    /* font-family: var(--ff-display); */
-    font-size: 4rem;
-    line-height: 1.2;
-    /* text-transform: lowercase; */
+    color: var(--clr-white);
+    font-size: 6rem;
+    line-height: 0.9;
     text-transform: uppercase;
-    background: linear-gradient(var(--clr-og-pink-light) 40%, var(--clr-pink-dark));
+    /* background: linear-gradient(var(--clr-og-pink-light) 40%, var(--clr-pink-dark));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     white-space: nowrap;
     pointer-events: none;
 }
 
 @media screen and (max-width: 1500px) {
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
+        line-height: 1;
     }
 }
 
 @media screen and (max-width: 600px) {
-    h1 {
+    /* h1 {
         font-size: 2rem;
-    }
+    } */
 
     .header-wrapper {
         display: block;
@@ -154,12 +153,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* display: flex;
-    /* justify-content: bottom; 
-    align-items: center; */
-
-
 }
 
 .header-content {
@@ -183,11 +176,11 @@ header::after {
     height: 100%;
     width: 100%;
 
-    /* background: linear-gradient(to bottom, var(--clr-white), var(--clr-white)); */
+    background: linear-gradient(45deg, hsl(318, 96%, 36%), hsl(309, 100%, 93%));
     /* -webkit-filter: grayscale(70%);
     filter: grayscale(100%); */
-    opacity: .7;
-    mix-blend-mode: color;
+    opacity: .4;
+    /* mix-blend-mode: difference; */
 }
 
 /* .header-content {
@@ -234,7 +227,7 @@ a {
 }
 
 .btn {
-    margin-top: 1rem !important;
+    margin-top: 1rem;
 
     border-radius: 1px;
     border: none;
@@ -242,7 +235,6 @@ a {
     font-weight: 500;
     padding: 2.4vh 1em;
 
-    font-size: 0.75rem;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -256,12 +248,16 @@ a {
     cursor: pointer;
 
     text-decoration: none !important;
-    font-size: 1.08em;
+    font-size: .9em;
 }
 
 .btn-dark {
     background-color: var(--clr-pink-dark);
     color: var(--clr-white);
+}
+
+.btn-light {
+    background-color: #fff;
 }
 
 .btn-container {
@@ -285,16 +281,25 @@ nav {
 }
 
 .main-nav {
-    z-index: 1000;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
+    padding: 0 5vw;
+
+    background-color: var(--clr-white);
 }
 
 .nav-content {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 1.2rem;
 }
 
 .main-nav a {
@@ -310,18 +315,74 @@ nav {
 }
 
 .logo {
-    /* width: 50px; */
     height: 5rem;
+    margin-right: auto;
+}
 
-    /* 
-.logo-text {
-    font-size: 3rem;
-    justify-self: center;
-    align-self: center;
-    color: var(--clr-pink);
-} */
+
+nav a.active {
+    text-decoration: underline wavy;
+}
+
+
+
+
+
+.navbar-toggler {
+    display: none;
+    padding: 15px;
+}
+
+.nav-first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 
 }
+
+@media screen and (max-width: 800px) {
+
+    .main-nav {
+        flex-direction: column;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .main-nav[data-state="closed"] .nav-content {
+        display: none;
+    }
+
+    .main-nav[data-state="open"] .nav-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-nav[data-state="open"] .nav-first-row {
+        border-bottom: 1px solid #505050;
+    }
+
+    .main-nav[data-scrolled="true"] {
+        box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-toggler {
+        display: block !important;
+        /* position: fixed;
+        top: 0;
+        right: 0; */
+    }
+
+    .logo {
+        margin-right: 0px;
+        width: 100%;
+
+        display: block !important;
+    }
+}
+
 
 
 
