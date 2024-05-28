@@ -10,32 +10,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="https://kit.fontawesome.com/af2e246792.js" crossorigin="anonymous"></script>
 
-
+    <!-- 
     <script defer src="js/jquery-3.3.1.min.js"></script>
     <script defer src="js/popper.min.js"></script>
     <script defer src="js/jquery.validate.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script defer src="js/main.js"></script> -->
 
-    <!-- Style -->
-    <!-- <link rel="stylesheet" href="css/style-form2.css"> -->
-    <!-- <link rel="stylesheet" href="css/style-form.css"> -->
 </head>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-content-left">
-            <a href="program.html">Program</a>
-            <a href="Jelentkezes.html">Jelentkezés</a>
-            <a href="partnereink.html" class="active">Partnereink</a>
-        </div>
-        <a href="index.html"><img class="logo" src="./img/logo.jpg" alt="676"></a>
-        <div class="nav-content-right">
-            <a href="fotok.html">Fotók</a>
-            <a href="elerhetoseg.html">Kapcsolat</a>
-            <a href="index.html">Főoldal</a>
-        </div>
-    </nav>
+
 
     <header class="header-subpage">
         <h1 class="title-subpage"> Kapcsolat </h1>
@@ -46,25 +31,29 @@
         <section id="contact-form">
             <div class="contact-wrap">
                 <div class="form">
-                    <h3>Vedd fel velünk a kapcsolatot</h3>
+                    <h3>Vedd fel velünk a kapcsolatot!</h3>
+                    <!-- <p>A csillaggal jelölt mezők kitöltése kötelező!</p> -->
                     <form method="post" id="contactForm" name="contactForm">
                         <div class="form-group">
-                            <label for="name">Név *</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Az Ön neve">
+                            <label for="name">Neved *</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder=""">
+                        </div>
+                        <div class=" form-group">
+                            <label for="email">Email címed *</label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="text" class="form-control" name="email" id="email"
-                                placeholder="Az Ön email címe">
+                            <label for="phone">Telefonszámod </label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Tárgy</label>
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefonszám">
+                            <label for="phone">Az üzeneted tárgya</label>
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="message">Üzenet *</label>
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="4"
-                                placeholder="Írja meg üzenetét"></textarea>
+                            <label for="message">Írj nekünk üzenetet itt *</label>
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="4"></textarea>
+                            <!-- placeholder="Írj nekünk üzenetet itt"></textarea> -->
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Üzenet Küldése" class="btn">
@@ -77,12 +66,15 @@
                 </div>
 
                 <div class="contact-info">
-                    <h3>Szöveg szöveg!</h3>
-                    <p class="mb-5">Szöveg szöveg szöveg szöveg szöveg.</p>
+                    <!-- KÉP -->
+                    <!-- <h3>Szöveg szöveg!</h3> -->
+                    <p class="mb-5">A program exkluzív, minden további információt csak kérésedre küldünk el. Az alábbi
+                        elérhetőségeken vagy a bal oldali üzenet dobozban tudod velünk felvenni a kapcsolatot.</p>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> Niki:</li>
-                        <li><i class="fas fa-phone"></i> Kata:</li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:hathetalatthat@gmail.com.com">hathetalatthat@gmail.com.com</a></li>
+                        <li><i class="fas fa-phone"></i> Kata: +36 20 665 7511</li>
+                        <li><i class="fas fa-phone"></i> Niki: +36 30 786 1240</li>
+                        <li><i class="fas fa-envelope"></i> <a
+                                href="mailto:hathetalatthat@gmail.com.com">hathetalatthat@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
