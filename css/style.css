@@ -539,6 +539,10 @@ span {
     vertical-align: middle;
 }
 
+.job {
+    font-weight: bold;
+}
+
 .szerep {
     font-style: italic;
 }
