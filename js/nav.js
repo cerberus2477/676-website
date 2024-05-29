@@ -12,7 +12,7 @@ const toggleNav = () => {
 }
 
 window.onscroll = function () {
-    if (window.pageYOffset > navHeight) {
+    if (window.scrollY > navHeight) {
         nav.dataset.scrolled = "true";
     } else {
         nav.dataset.scrolled = "false";
