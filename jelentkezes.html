@@ -48,8 +48,9 @@
         <section class=" center">
             <h2>Ne maradj le!</h2>
             <div>
-                <p> Sajnos egyszerre összesen 5 hölgynek van lehetősége részt venni a programon. <br> szeretnél köztük
-                    lenni, és érdekelnek a részletek, jelentkezz nálunk, és elküldünk neked minden fontos tudnivalót!"
+                <p> Sajnos egyszerre összesen 5 hölgynek van lehetősége részt venni a programon. <br> Ha szeretnél
+                    köztük
+                    lenni, és érdekelnek a részletek, jelentkezz nálunk, és elküldünk neked minden fontos tudnivalót!
                 </p>
                 <p><b>Következő turnus: 2024. június 22-aug.3.</b></p>
                 <!-- <div class="btn-container"><a href="jelentkezes.html" class="btn">Jelentkezés</a></div> -->
@@ -63,24 +64,28 @@
                     <h3>Jelentkezés</h3>
                     <!-- <p>A csillaggal jelölt mezők kitöltése kötelező!</p> -->
                     <form method="post" id="contactForm" name="contactForm">
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="name">Neved *</label>
                             <input type="text" class="form-control" name="name" id="name" placeholder=""">
-                        </div>
+                        </div> -->
                         <div class=" form-group">
                             <label for="email">Email címed *</label>
                             <input type="text" class="form-control" name="email" id="email" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Jelentkezési adat1 </label>
+                            <label for="phone">Telefonszámod * </label>
                             <input type="text" class="form-control" name="phone" id="phone" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Jelentkezési adat2 </label>
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="">
+                            <label for="age">Életkoros *</label>
+                            <input type="number" class="form-control" name="age" id="age" min="0" max="117">
+                        </div>
+                        <div class=" form-group">
+                            <label for="email">Településed *</label>
+                            <input type="city" class="form-control" name="city" id="city" placeholder="">
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Üzenet Küldése" class="btn">
+                            <input type="submit" value="Kérem a részletes információkat" class="btn">
                             <span class="submitting"></span>
                         </div>
                     </form>
