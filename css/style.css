@@ -97,8 +97,13 @@ h3 {
     margin-bottom: .7em;
 }
 
-#program-site h2 {
+#program-site h2,
+#program-site h3 {
     text-transform: uppercase;
+}
+
+#program-site h2#cta {
+    text-transform: none;
 }
 
 
