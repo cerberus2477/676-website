@@ -135,6 +135,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
 
+    background-color: #005B4F;
     font-family: var(--ff);
     font-size: calc(15px + 0.25vw);
     font-weight: 300;
