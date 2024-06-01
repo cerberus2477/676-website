@@ -163,9 +163,9 @@ header {
     padding-bottom: 5rem;
 }
 
-.header-wrapper {
+/* .header-wrapper {
     margin-top: 6rem;
-}
+} */
 
 .title-subpage {
     justify-content: center;
@@ -387,6 +387,10 @@ nav a.active {
 
         display: block !important;
     }
+
+    header {
+        margin-top: 0;
+    }
 }
 
 
@@ -401,6 +405,11 @@ nav a.active {
 section,
 footer {
     padding: 65px 10%;
+}
+
+section {
+    background-color: var(--clr-white);
+    color: black;
 }
 
 .columns {
