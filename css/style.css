@@ -534,7 +534,9 @@ span {
     display: inline-block;
 }
 
-
+q {
+    font-size: 1.3em;
+}
 
 .p676 {
     font-weight: bold;
