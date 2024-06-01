@@ -89,6 +89,7 @@ h1,
 h2,
 h3 {
     letter-spacing: 3px;
+    color: var(--clr-grey-dark);
 }
 
 
@@ -488,10 +489,12 @@ footer>div>div {
 
 .bg-pink {
     background-color: var(--clr-og-pink-light);
+    color: var(--clr-black);
 }
 
 .bg-fabric {
     background-image: url("../img/fabr2.jpg");
+    color: var(--clr-black)
 }
 
 .bg-dark {
