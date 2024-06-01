@@ -475,6 +475,9 @@ footer>div>div {
     max-width: 1440px;
 }
 
+.wrapper-small {
+    max-width: 1010px;
+}
 
 
 
@@ -532,6 +535,9 @@ ul.list-line {
     object-fit: cover;
     border: 15px solid white;
     box-shadow: var(--shadow-natural);
+
+    /* max-width: 600px; */
+    width: clamp(100%, 600px, 50%);
 }
 
 
