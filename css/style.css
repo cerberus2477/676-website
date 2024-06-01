@@ -548,6 +548,11 @@ q {
     font-size: 1.3em;
 }
 
+.pink {
+    color: var(--clr-og-pink-light);
+    font-weight: bold;
+}
+
 .p676 {
     font-weight: bold;
     font-size: 1.2em;
