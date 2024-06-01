@@ -97,9 +97,7 @@ h3 {
     margin-bottom: .7em;
 }
 
-#program-site h2 {
-    text-transform: uppercase;
-}
+
 
 
 @media screen and (max-width: 1500px) {
@@ -583,9 +581,6 @@ i {
     color: #fff;
     margin-top: 5px;
 }
-
-
-
 
 
 
