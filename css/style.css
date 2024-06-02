@@ -14,7 +14,8 @@
     --clr-white: #ffffff;
     --clr-black: #000000;
 
-    /* szurke lehet subtext */
+    --clr-alpha-pink-dark: rgba(201, 122, 151, .6);
+    --clr-alpha-gray: rgba(104, 103, 103, .6);
 
     /* adobe */
     --clr-a2: #B2C5EB;
@@ -167,7 +168,7 @@ header {
     margin-top: 5rem;
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     background-color: transparent;
 
     background-image: url("../img/fabr2.jpg");
@@ -446,10 +447,12 @@ section {
 
 .card {
     /* background-color: #6B3A50; */
-    border-radius: 5px;
-    border: 1px dashed var(--clr-grey-dark);
+    /* border-radius: 5px;
+    border: 1px dashed var(--clr-grey-dark); */
     padding: 1rem;
 }
+
+
 
 footer>div {
     display: flex;
@@ -768,3 +771,63 @@ label.error {
     font-size: 12px;
     color: #000;
 } */
+
+
+
+
+.x2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    z-index: 1;
+
+    color: var(--clr-white);
+    font-size: 1.2em;
+}
+
+
+.x2x2>.card>p {
+    max-width: 35ch;
+}
+
+.bg-alpha-gray {
+    background-color: var(--clr-alpha-gray);
+    /* Using --clr-og-grey-mid with 60% opacity */
+}
+
+.bg-alpha-pink {
+    background-color: var(--clr-alpha-pink-dark)
+        /* Using --clr-og-pink-light with 60% opacity */
+}
+
+
+.x2x2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hero-img.png') no-repeat center bottom/contain;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .x2x2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 2000px) {
+    .x2x2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+#majd-kiveheto {
+    background-color: var(--clr-white);
+}
