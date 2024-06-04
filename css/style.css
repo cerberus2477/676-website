@@ -107,6 +107,10 @@ h3 {
     text-transform: none;
 }
 
+#partner-site section {
+    padding: 30px 10%;
+}
+
 
 @media screen and (max-width: 1500px) {
     h1 {
@@ -831,4 +835,64 @@ label.error {
 
 #majd-kiveheto {
     background-color: var(--clr-white);
+}
+
+
+
+
+/* közepen cim */
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    /* background: var(--clr-og-pink-light) */
+    background-color: var(--clr-grey-dark);
+}
+
+.line::before {
+    left: -120px;
+    margin-top: -0.5px;
+}
+
+.line::after {
+    right: -120px;
+    margin-top: -0.5px;
+}
+
+.line {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* idk yet */
+.line-short::before,
+.line-short::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* width: 100px;
+    height: 1px; */
+    background: var(--clr-grey-dark)
+}
+
+.line-short::before {
+    /* left: -120px; */
+    /* Adjust as needed */
+    margin-top: -0.5px;
+    /* Vertically center the line */
+}
+
+.line-short::after {
+    /* right: -120px; */
+    /* Adjust as needed */
+    margin-top: -0.5px;
+}
+
+.line-short {
+    display: inline-block;
+    position: relative;
 }
