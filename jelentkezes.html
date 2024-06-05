@@ -63,27 +63,32 @@
             <div class="contact-wrap">
                 <div class="form">
                     <h3>Jelentkezés</h3>
-                    <!-- <p>A csillaggal jelölt mezők kitöltése kötelező!</p> -->
+                    <p>A csillaggal jelölt mezők kitöltése kötelező!</p>
                     <form method="post" action="https://formspree.io/f/xayrgezl" id="contactForm" name="contactForm">
                         <div class="form-group">
                             <label for="nev">Neved *</label>
-                            <input type="text" class="form-control" name="nev" id="nev" placeholder="">
+                            <input type="text" class="form-control" name="nev" id="nev" placeholder="" maxlength="50"
+                                required>
                         </div>
                         <div class=" form-group">
                             <label for="email">Email címed *</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="">
+                            <input type="text" class="form-control" name="email" id="email" placeholder=""
+                                maxlength="50" required>
                         </div>
                         <div class="form-group">
                             <label for="telefon">Telefonszámod * </label>
-                            <input type="text" class="form-control" name="telefon" id="telefon" placeholder="">
+                            <input type="text" class="form-control" name="telefon" id="telefon" placeholder=""
+                                maxlength="15" required>
                         </div>
                         <div class="form-group">
                             <label for="eletkor">Életkorod *</label>
-                            <input type="number" class="form-control" name="eletkor" id="eletkor" min="0" max="117">
+                            <input type="number" class="form-control" name="eletkor" id="eletkor" min="0" max="117"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="telepules">Településed *</label>
-                            <input type="city" class="form-control" name="telepules" id="telepules" placeholder="">
+                            <input type="city" class="form-control" name="telepules" id="telepules" placeholder=""
+                                maxlength="100" required>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Kérem a részletes információkat" class="btn">

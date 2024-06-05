@@ -41,7 +41,7 @@
 
     --line-height-text: 1.625;
 
-    --spacing--30: 0.67rem;
+    --spacing--30: .67rem;
     /* 10.72 */
 
     --gutter-y-section: 65px;
@@ -55,9 +55,9 @@
     --font-size--large: 24px;
     --font-size--x-large: 42px;
 
-
+    --spacing--10: .2rem;
     /* 7.04 */
-    --spacing--20: 0.44rem;
+    --spacing--20: .44rem;
 
     --spacing--40: 1rem;
     --spacing--50: 1.5rem;
@@ -207,12 +207,15 @@ body {
     font-family: var(--ff);
     font-size: calc(15px + 0.25vw);
     /* font-size: var(--font-size--medium); */
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: var(--line-height-text);
     color: var(--clr-grey-dark);
 }
 
+b {
+    font-weight: 600;
+}
 
 /* HEADER------------------------------------------------------- */
 header {
@@ -769,23 +772,20 @@ i {
 
 input,
 textarea {
+    font-family: var(--ff);
     border: none;
     border-bottom: 1px solid var(--clr-og-grey-mid);
     padding-inline: 0;
     border-radius: 0;
     background: none;
     width: 100%;
-}
-
-input {
-    /* height: 3.5rsem; */
-    padding-block: .2rem;
-    /* margin-top: 2rem; */
+    padding-block: var(--spacing--10);
 }
 
 textarea {
     border: 1px solid var(--clr-og-grey-mid);
     border-radius: 3px;
+    padding: var(--spacing--10);
 }
 
 
@@ -852,7 +852,7 @@ label.error {
 
 
 .form-group {
-    margin: 15px;
+    margin-block: var(--spacing--50);
 }
 
 @media (max-width: 884px) {
