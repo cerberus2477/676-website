@@ -434,7 +434,7 @@ nav a.active {
     box-shadow: var(--shadow-natural);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 785px) {
 
     .main-nav {
         flex-direction: column;
@@ -586,6 +586,13 @@ footer>div>div {
     color: var(--clr-white);
 }
 
+.bg-dark h2,
+.bg-dark h3,
+.bg-fabric h2,
+.bg-fabric h3 {
+    color: var(--clr-black);
+}
+
 ul {
     list-style-type: circle;
     padding: .5rem;
@@ -663,11 +670,11 @@ q {
     font-style: italic;
 }
 
-i {
+/* i {
     font-size: 20px;
     color: #fff;
     margin-top: 5px;
-}
+} */
 
 
 
