@@ -25,7 +25,7 @@
     <nav class="main-nav" data-state="closed" data-scrolled="false">
         <div class="nav-first-row">
             <a href="index.html"><img class="logo" src="./img/logo-676.jpg" alt="676 logó" title="Főoldal"></a>
-            <a href="#" class="btn btn-dark navbar-toggler" onclick="toggleNav();">
+            <a href="#" class="btn btn-unstyled navbar-toggler" onclick="toggleNav();">
                 <span class="fa fa-bars"></span>
             </a>
         </div>
@@ -54,23 +54,27 @@
                     <form method="post" action="https://formspree.io/f/xjvnqyqr" id="contactForm" name="contactForm">
                         <div class="form-group">
                             <label for="nev">Neved *</label>
-                            <input type="text" class="form-control" name="nev" id="nev" placeholder="" required>
+                            <input type="text" class="form-control" name="nev" id="nev" placeholder="" required
+                                maxlength="50">
                         </div>
                         <div class=" form-group">
                             <label for="email">Email címed *</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="" required>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="" required
+                                maxlength="100">
                         </div>
                         <div class="form-group">
                             <label for="telefon">Telefonszámod </label>
-                            <input type="text" class="form-control" name="telefon" id="telefon" placeholder="">
+                            <input type="text" class="form-control" name="telefon" id="telefon" placeholder=""
+                                maxlength="15">
                         </div>
                         <div class="form-group">
                             <label for="targy">Az üzeneted tárgya</label>
-                            <input type="text" class="form-control" name="targy" id="targy" placeholder="">
+                            <input type="text" class="form-control" name="targy" id="targy" placeholder=""
+                                maxlength="50">
                         </div>
                         <div class="form-group">
                             <label for="uzenet">Írj nekünk üzenetet itt *</label>
-                            <textarea class="form-control" name="uzenet" id="uzenet" cols="30" rows="4"
+                            <textarea class="form-control" name="uzenet" id="uzenet" cols="30" rows="10"
                                 required></textarea>
                             <!-- placeholder="Írj nekünk üzenetet itt"></textarea> -->
                         </div>
