@@ -16,6 +16,7 @@
 
     --clr-alpha-pink-dark: rgba(201, 122, 151, .6);
     --clr-alpha-gray: rgba(104, 103, 103, .6);
+    --clr-alpha-l-gray: rgba(104, 103, 103, .2);
 
     /* adobe */
     --clr-a2: #B2C5EB;
@@ -55,7 +56,8 @@
     --wp--preset--spacing--80: 5.06rem;
 
 
-    --shadow-natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --shadow-natural: 6px 6px 9px var(--clr-alpha-l-gray);
+    /* --shadow-slight: 3px 3px 9px var(var(--clr-alpha-l-gray)); */
     --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
     --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
     /* --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1); */
@@ -107,7 +109,8 @@ h3 {
     text-transform: none;
 }
 
-#partner-site section {
+#partner-site section,
+#program-site section {
     padding: 30px 10%;
 }
 
@@ -371,7 +374,7 @@ nav a.active {
 }
 
 .main-nav[data-scrolled="true"] {
-    box-shadow: 6px 6px 9px var(--shadow-natural);
+    box-shadow: var(--shadow-natural);
 }
 
 @media screen and (max-width: 800px) {
@@ -439,7 +442,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 2rem;
     justify-items: center;
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 .text-and-img {
@@ -480,6 +483,7 @@ footer>div>div {
 
 
 .wrapper {
+    margin-inline: auto;
     max-width: 1440px;
 }
 
