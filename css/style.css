@@ -125,7 +125,7 @@ h1.title-main {
 
 
 /* big */
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     h1.title-subpage {
         font-size: 5rem;
     }
@@ -133,7 +133,7 @@ h1.title-main {
 
 
 /* laptop */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 3.5rem;
         line-height: 1;
@@ -150,7 +150,27 @@ h1.title-main {
     .header-wrapper {
         display: block;
     }
+
+    section {
+        padding: var(--gutter-y-section) var(--spacing--10);
+    }
 }
+
+
+@media screen and (max-width: 450px) {
+    /* img {
+        max-width: 300px !important;
+    } */
+
+    .text-and-img {
+        display: block;
+    }
+
+    .columns {
+        display: block;
+    }
+}
+
 
 
 h1,
@@ -222,7 +242,7 @@ header {
     margin-top: 5rem;
     position: relative;
     width: 100%;
-    /* min-height: 70vh; */
+    min-height: 30vh;
     /* max-height: 90vh; */
     background-color: transparent;
 
@@ -512,8 +532,10 @@ section {
 
 .text-and-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 
@@ -616,7 +638,7 @@ ul.list-line {
     object-fit: cover;
     border: 15px solid white;
     box-shadow: var(--shadow-natural);
-
+    min-height: 70%;
     /* max-width: 600px; */
     width: clamp(100%, 600px, 50%);
 }
