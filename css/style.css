@@ -223,7 +223,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
 
-    background-color: #005B4F;
+    background-color: var(--clr-white);
     font-family: var(--ff);
     font-size: calc(15px + 0.25vw);
     /* font-size: var(--font-size--medium); */
