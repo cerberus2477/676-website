@@ -147,9 +147,6 @@ h1.title-main {
         line-height: .9;
     }
 
-    .header-wrapper {
-        display: block;
-    }
 
     section {
         padding: var(--gutter-y-section) var(--spacing--10);
@@ -282,12 +279,14 @@ header::after {
     position: relative;
     margin: 0 10rem;
     padding: 1px;
-}
+}*/
 
 .header-img img {
-     height: 70%; 
-    width: 70%;
-} */
+    /* height: 70%; 
+    width: 70%; */
+    align-self: end;
+    /* width: ; */
+}
 
 
 header * {
@@ -533,8 +532,9 @@ section {
 .text-and-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    justify-items: center;
     gap: 2rem;
 }
 
@@ -634,7 +634,7 @@ ul.list-line {
 
 
 /* MORE STYLING------------------------------------------------------------ */
-.text-and-img>img {
+main .text-and-img>img {
     object-fit: cover;
     border: 15px solid white;
     box-shadow: var(--shadow-natural);
