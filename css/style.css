@@ -169,7 +169,9 @@ h1.title-main {
     }
 }
 
-
+q {
+    font-size: var(--font-size--large);
+}
 
 h1,
 h2,
@@ -663,10 +665,6 @@ footer a {
 
 span {
     display: inline-block;
-}
-
-q {
-    font-size: 1.3em;
 }
 
 .pink {
