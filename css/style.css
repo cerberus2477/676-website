@@ -141,15 +141,16 @@ h1.title-main {
 }
 
 /* phone */
-@media screen and (max-width: 600px) {
+@media and (max-width: 600px) {
     h1 {
         font-size: 2rem;
         line-height: .9;
     }
 
 
-    section {
-        padding: var(--gutter-y-section) var(--spacing--10);
+    section,
+    footer {
+        padding: var(--gutter-y-section) var(--spacing--10) !important;
     }
 }
 
@@ -703,61 +704,64 @@ q {
 
 
 /* közepen cim */
-.line::before,
-.line::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100px;
-    height: 1px;
-    /* background: var(--clr-og-pink-light) */
-    background-color: var(--clr-grey-dark);
-}
+@media (min-width: 750px) {
 
-.line::before {
-    left: -120px;
-    margin-top: -0.5px;
-}
+    .line::before,
+    .line::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 100px;
+        height: 1px;
+        /* background: var(--clr-og-pink-light) */
+        background-color: var(--clr-grey-dark);
+    }
 
-.line::after {
-    right: -120px;
-    margin-top: -0.5px;
-}
+    .line::before {
+        left: -120px;
+        margin-top: -0.5px;
+    }
 
-.line {
-    display: inline-block;
-    position: relative;
-}
+    .line::after {
+        right: -120px;
+        margin-top: -0.5px;
+    }
 
-/* idk yet */
-.line-short::before,
-.line-short::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    /* width: 100px;
+    .line {
+        display: inline-block;
+        position: relative;
+    }
+
+    /* idk yet */
+    .line-short::before,
+    .line-short::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        /* width: 100px;
     height: 1px; */
-    background: var(--clr-grey-dark)
-}
+        background: var(--clr-grey-dark)
+    }
 
-.line-short::before {
-    /* left: -120px; */
-    /* Adjust as needed */
-    margin-top: -0.5px;
-    /* Vertically center the line */
-}
+    .line-short::before {
+        /* left: -120px; */
+        /* Adjust as needed */
+        margin-top: -0.5px;
+        /* Vertically center the line */
+    }
 
-.line-short::after {
-    /* right: -120px; */
-    /* Adjust as needed */
-    margin-top: -0.5px;
-}
+    .line-short::after {
+        /* right: -120px; */
+        /* Adjust as needed */
+        margin-top: -0.5px;
+    }
 
-.line-short {
-    display: inline-block;
-    position: relative;
-}
+    .line-short {
+        display: inline-block;
+        position: relative;
+    }
 
+}
 
 
 
