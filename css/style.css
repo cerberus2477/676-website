@@ -999,3 +999,9 @@ label.error {
 #majd-kiveheto {
     background-color: var(--clr-white);
 }
+
+
+.no-wrap {
+    word-wrap: none;
+    word-break: normal;
+}
