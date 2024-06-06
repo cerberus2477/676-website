@@ -297,10 +297,12 @@ header * {
 .header-subpage {
     padding: 1px;
     height: fit-content;
-    min-height: 20vw;
+    min-height: 30vw;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .title-subpage {
