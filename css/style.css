@@ -141,7 +141,7 @@ h1.title-main {
 }
 
 /* phone */
-@media and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 2rem;
         line-height: .9;
